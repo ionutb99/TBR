@@ -13,7 +13,7 @@ function Intrebari() {
   return (
     <div className='intrebari' >
         <header className="App-header">
-          <h1>Pune si tu o intrebare ☟ </h1>
+          <h1>Pune si tu o intrebare ☟ </h1>  
           <form onSubmit={handleSubmit}>
             <button type="submit" className="submitBtn"> Du-mă la Intrebări → </button>
           </form>
