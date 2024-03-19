@@ -5,7 +5,7 @@ import Acasa from "./Acasa";
 import Intrebari from './Intrebari';
 import Despre from './Despre.js';
 import Maps from './Maps.js';
-import Propuneri from './Propuneri.js';
+import Contact from './Contact.js';
 import Navbar  from './Navbar.js';
 import Footer from './Footer.js';
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/intrebari" element={<Intrebari />} />
         <Route path="/despre" element={<Despre />} />
         <Route path="/maps" element={<Maps />} />
-        <Route path="/propuneri" element={<Propuneri />} />
+        <Route path="/propuneri" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

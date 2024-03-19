@@ -8,7 +8,7 @@ function Navbar() {
         <li><Link to="/intrebari">Intrebari</Link></li>
         <li><Link to="/despre">Despre</Link></li>
         <li><Link to="/maps">Maps</Link></li>
-        <li><Link to="/propuneri">Propuneri</Link></li>
+        <li><Link to="/propuneri">Contact</Link></li>
       </ul>
     </nav>
   );
