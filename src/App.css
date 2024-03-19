@@ -2,7 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: auto;
-  background-color: blanchedalmond;
+  background-color:rgb(140, 141, 96);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intrebari {
@@ -27,7 +29,7 @@ body {
 }
 
 .App-header {
-  background-color: rgb(29, 91, 119);
+  /* background-color: rgb(7, 22, 29); */
   border-radius: 10px;
   margin-left: 20px;
   margin-right: 20px;
@@ -38,6 +40,11 @@ body {
 .App-header input{
   height: 30px;
   border-radius: 15px;
+}
+
+.App-header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 
 .submitBtn{
@@ -55,20 +62,13 @@ h1 {
 }
 
 .instructiuni {
-  /* background-color: rgb(12, 78, 109); */
+
   border-radius: 10px;
 }
 
 .instructiuni h2 {
  text-decoration: underline;
 }
-
-/* .navbar {
-  background-color: #333;
-  overflow: hidden;
-  align-items: center;
-  text-align: center;
-} */
 
 .navbar {
   position: fixed;
@@ -78,7 +78,7 @@ h1 {
   overflow: hidden;
   align-items: center;
   text-align: center;
-  z-index: 1000; /* Ensure the navbar is above other content */
+  z-index: 1000; 
 }
 
 .navbar a {
@@ -114,12 +114,42 @@ h1 {
   padding: 8px 0;
 }
 
+.mapsH1 {
+  padding-top: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.maps {
+  margin-top: 125px;
+  width: 700px;
+  height: 500px;
+}
+
+#titlu {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-variant: small-caps;
+}
+
+#verset {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+
+/* 
 @media only screen and (min-width: 600px) {
   .App {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 45px;
     text-align: center;
+  }
+
+  .maps {
+    max-width: 800px;
+    max-height: 600px;
   }
 
   .App-header {
@@ -201,15 +231,21 @@ h1 {
     text-align: center;
     padding: 8px 0;
   }
-}
+} */
 
-/* Styles for smaller screens */
+
 @media only screen and (max-width: 599px) {
   .App {
     max-width: 100%;
     margin: 0 auto;
     padding: 10px;
+    padding-top: 45px;
     text-align: center;
+  }
+
+  .maps {
+    max-width: 420px;
+    max-height: 350px;
   }
 
   .App-header {
