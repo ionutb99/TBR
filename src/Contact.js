@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
+  const form = useRef();
+
+  const sendMess = (e) => {
+    e.preventDefault();
+    toast.success("Message sent succesfully!");
+  };
+
   return (
     <div className="contact-container">
-      <h1 className="contact-title">Contactează-ne!</h1>
-
-      <form className="contact-form">
+      <h1 className="contact-title">Contactează-mă!</h1>
+      <ToastContainer />
+      <form className="contact-form" onSubmit={sendMess}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -23,10 +32,12 @@ function Contact() {
         </button>
       </form>
       <div>
-
-      <p><b>Telefon:</b> 0734813971 </p>
-      <p><b>Email:</b> ionutbuzila00@gmail.com</p>
-      <p><b>Adresă:</b> Rebrișoara, Principala, 242</p>
+        <p>
+          <b>Telefon:</b> 0734 813 971{" "}
+        </p>
+        <p>
+          <b>Email:</b> ionutbuzila00@gmail.com
+        </p>
       </div>
     </div>
   );
