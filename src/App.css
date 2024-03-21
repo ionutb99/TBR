@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -117,6 +118,7 @@ h1 {
 .mapsH1 {
   padding-top: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
 }
 
 .maps {
@@ -134,6 +136,11 @@ h1 {
 #verset {
   font-family:'Times New Roman', Times, serif;
   font-size: 20px;
+}
+
+.mapContainer {
+  margin-top: -70px;
+  margin-bottom: 50px;
 }
 
 
@@ -291,4 +298,8 @@ textarea {
 .submit-button:hover {
   background-color: #0056b3;
 }
+
+
+
+
 

@@ -8,13 +8,14 @@ function Contact() {
   const sendMess = (e) => {
     e.preventDefault();
     toast.success("Message sent succesfully!");
+    form.current.reset();
   };
 
   return (
     <div className="contact-container">
       <h1 className="contact-title">Contactează-mă!</h1>
       <ToastContainer />
-      <form className="contact-form" onSubmit={sendMess}>
+      <form ref={form} className="contact-form" onSubmit={sendMess}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
